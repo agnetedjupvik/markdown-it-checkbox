@@ -42,10 +42,11 @@ checkboxReplace = function(md, options, Token) {
     /**
      * <label for="checkbox{n}">
      */
+    /*
     token = new Token("label_open", "label", 1);
     token.attrs = [["for", id]];
     nodes.push(token);
-
+    */
     /**
      * content of label tag
      */
@@ -56,10 +57,12 @@ checkboxReplace = function(md, options, Token) {
     /**
      * closing tags
      */
+     /*
     nodes.push(new Token("label_close", "label", -1));
     if (options.divWrap) {
       nodes.push(new Token("checkbox_close", "div", -1));
     }
+    */
     return nodes;
   };
   splitTextToken = function(original, Token) {
